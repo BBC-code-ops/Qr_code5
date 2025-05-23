@@ -84,13 +84,18 @@
     </div>
 
     <div class="passage no-copy" id="passage">
-      <h3>The Coded Warning5 - Passage </h3>
-      <p>Detective Martinez examined the crime scene one last time before the forensics team packed up. 
-        The victim's computer screen had been wiped clean except for one thing—a sequence of numbers scrawled in permanent marker across the monitor: *65 66*
-The killer had left this message deliberately, knowing that only someone familiar with computer codes would understand its meaning. 
-Martinez realized these weren't random numbers—they were ASCII values, the numerical codes computers use to represent letters. 
-The victim, a programmer, had likely seen the message and understood its significance before it was too late.
-This wasn't just evidence—it was a warning meant for whoever found the scene.
+      <h3>The Computer Lab Mystery 5 - Passage </h3>
+      <p>
+        The Hidden Message
+Alex was cleaning out the old computer lab when they found a dusty piece of paper taped under one of the keyboards.
+ The paper contained a note from the previous computer science teacher:
+  "My replacement key is hidden where students never look.
+   The location is encoded in the programmer's language.
+    Decode these numbers to find it: 67 65 66." 
+    Alex remembered from programming class that computers store letters as ASCII values—numbers that represent each character.
+     The teacher had always emphasized that understanding ASCII was essential for any programmer, 
+     and now Alex needed to convert these three numbers back into letters to discover where 
+     the replacement key was hidden.
 </p>
       <button onclick="showQuestion()">Next</button>
     </div>
@@ -106,7 +111,7 @@ This wasn't just evidence—it was a warning meant for whoever found the scene.
     </div>
 
     <div class="answerBox" id="answerBox">
-      <h3>What is the hidden message represented by these ASCII values: *65 66*? in the passage  </h3>
+      <h3>What is the hidden message represented by these ASCII values: 67 65 66 ? in the passage  </h3>
       <input type="text" id="binaryAnswer" placeholder="enter the answer here">
       <button onclick="submitAnswer()">Submit</button>
     </div>
@@ -114,7 +119,11 @@ This wasn't just evidence—it was a warning meant for whoever found the scene.
     <div class="riddleSection" id="riddleSection">
       <h3>🎉 Correct!</h3>
       <p>Here’s your next riddle:</p>
-      <p><em>" No one speaks, yet words are heard. A thousand voices without a word."</em></p>
+      <p><em>"I go up, I go down,
+Without legs, I move around.
+I carry people from the ground floor,
+To many levels, and back once more.
+"</em></p>
     </div>
   </div>
 
@@ -154,7 +163,7 @@ This wasn't just evidence—it was a warning meant for whoever found the scene.
 
     function submitAnswer() {
       const answer = document.getElementById('binaryAnswer').value.trim();
-      const correctAnswer = "AB";
+      const correctAnswer = "CAB || cab";
 
       if (answer === correctAnswer) {
         document.getElementById('answerBox').style.display = 'none';
